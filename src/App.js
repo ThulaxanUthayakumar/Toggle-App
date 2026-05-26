@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
 function App() {
+
+  // State
+  const [isOn, setIsOn] = useState(false);
+
+  // Toggle Function
+  const toggleSwitch = () => {
+    setIsOn(!isOn);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: "center", marginTop: "100px" }}>
+
+      <h1>Toggle App</h1>
+
+      <h2>
+        {isOn ? "ON" : "OFF"}
+      </h2>
+
+      <button onClick={toggleSwitch}>
+        Toggle
+      </button>
+
     </div>
   );
 }
