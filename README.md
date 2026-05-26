@@ -16,11 +16,6 @@ A simple React Toggle App built using React Hooks (`useState`).
 - JavaScript
 - CSS
 
-## Preview
-
-<img width="1448" height="1086" alt="Toggle app" src="https://github.com/user-attachments/assets/15f77f37-9f44-4987-85e3-3215539d5f73" />
-
-
 ## Installation
 
 Clone the repository:
